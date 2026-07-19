@@ -1,0 +1,32 @@
+# --- Dados pessoais / acervo: NUNCA commitar (o engine e engine-only) ---
+# Fichas reais e caches de qualquer usuario
+/collections/
+!/demo/collections/
+/_system/
+!/schema/
+*_STATUS.md
+adoption_log.csv
+index.csv
+manifest.json
+!/demo/**/manifest.json
+!/schema/*.json
+/discovery/
+dm-tracker*
+DASHBOARD_acervo_*.html
+BACKLOG.md
+PROMOTION_QUEUE.md
+candidates.md
+*.backup-*
+*.md5
+
+# --- Ambiente / ruido ---
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Identidade do usuario (gerada pelo onboarding) — NUNCA versionar:
+/config.json
+!/config.example.json

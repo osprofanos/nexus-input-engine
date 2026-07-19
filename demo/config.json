@@ -1,0 +1,14 @@
+{
+  "account": "demo-user",
+  "dashboard_file": "DASHBOARD.html",
+  "collections": [
+    {"name": "ideas",     "source": "instagram", "saved_collection_id": "0000000000"},
+    {"name": "bookmarks", "source": "x", "saved_collection_id": null, "url": "https://x.com/i/bookmarks"}
+  ],
+  "projects_canon": [
+    {"term": "Automation", "axis": "system_project", "aliases": ["Tooling"]},
+    {"term": "Blog",       "axis": "content_channel"},
+    {"term": "Newsletter", "axis": "content_channel"},
+    {"term": "Personal",   "axis": "personal"}
+  ]
+}

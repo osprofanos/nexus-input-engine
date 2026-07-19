@@ -1,0 +1,16 @@
+{
+  "account": "your-handle",
+  "instagram_saved_url_template": "https://www.instagram.com/{account}/saved/{name}/{saved_collection_id}/",
+  "dashboard_file": "DASHBOARD.html",
+  "collections": [
+    {"name": "ideas",     "source": "instagram", "saved_collection_id": "REPLACE_WITH_YOUR_SAVED_ID"},
+    {"name": "reading",   "source": "instagram", "saved_collection_id": "REPLACE_WITH_YOUR_SAVED_ID"},
+    {"name": "bookmarks", "source": "x", "saved_collection_id": null, "url": "https://x.com/i/bookmarks"}
+  ],
+  "projects_canon": [
+    {"term": "Automation", "axis": "system_project", "aliases": ["Tooling"]},
+    {"term": "Blog",       "axis": "content_channel"},
+    {"term": "Newsletter", "axis": "content_channel"},
+    {"term": "Personal",   "axis": "personal"}
+  ]
+}
