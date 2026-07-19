@@ -121,8 +121,10 @@ def main():
         for it in groups[g]:
             ranked_flat.append({**it, "group": g})
     ranked_flat.sort(key=lambda x: (GROUP_RANK[x["group"]], -x["leverage"], x["id"]))
+    # Grouped shape (top per_group per axis) — the source for the generated dashboard RANK.
+    grouped = {g: [{**it, "group": g} for it in groups[g][:per_group]] for g in GROUP_ORDER}
     payload = {"generated_at": today, "counts": counts, "per_group": per_group,
-               "limit": limit, "candidates": ranked_flat[:limit]}
+               "limit": limit, "candidates": ranked_flat[:limit], "groups": grouped}
 
     atomic_write(out_dir / "candidates.md", md)
     atomic_write(out_dir / "candidates.json", json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
